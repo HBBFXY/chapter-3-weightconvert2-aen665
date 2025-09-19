@@ -1,6 +1,8 @@
 # 在这个文件里编写代码
-weight=float(input("请输入你在地球上的体重"))
-for i in range(1,11):
-    weight+=0.5
-    moonweight=m*0.165
-    print(f"第{i}年，地球上的体重为{weight:.2f}kg,月球上的体重为{moonweight:.2f}kg")
+# 在这个文件里编写代码
+earth_weight = float(input("请输入地球重量(kg)："))
+print("年份\t地球重量(kg)\t月球重量(kg)")
+for year in range(1, 11):
+    earth_weight+=0.5
+    moon_weight=earth_weight*0.165
+    print(f"{year}\t{earth_weight:.2f}\t\t{moon_weight:.2f}")
